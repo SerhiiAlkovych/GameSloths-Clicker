@@ -16,6 +16,7 @@ public class SceneManager : MonoBehaviour
     public GameObject[] _playerList;
     public GameObject[] _wizardHelperList;
     public GameObject[] _warriorHelperList;
+    public GameObject[] _padsObjectImageList;
 
     [Header("Transform references")]
     public Transform _enemySpawnPosition;
@@ -32,13 +33,21 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _playerGoldText.text = FindObjectOfType<AwardManager>().PlayerGold.ToString();
+        //_playerGoldText.text = FindObjectOfType<AwardManager>().PlayerGold.ToString();
         BackgroundImageUpdate();
+        PadsImageUpdate();
     }
 
     private void BackgroundImageUpdate()
     {
-        GameObject.Find ("Main_scene_panel").GetComponent<Image> ().sprite  =  _backgroundImageList[index];
+        GameObject.Find("Main_scene_panel").GetComponent<Image>().sprite = _backgroundImageList[index];
+    }
+
+    private void PadsImageUpdate()
+    {
+        foreach(var padsList in _padsObjectImageList) {
+            padsList.GetComponent<Image>().sprite = _padsImageList[index];
+        }
     }
 
 

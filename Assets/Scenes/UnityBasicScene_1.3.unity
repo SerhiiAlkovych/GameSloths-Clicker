@@ -1322,9 +1322,15 @@ MonoBehaviour:
   - {fileID: 7385271364059780256, guid: 9c332a34c77658a46bd7a1e06be4907b, type: 3}
   - {fileID: 5314578529826443851, guid: e2527d7a44224904a9814614b2c240a0, type: 3}
   - {fileID: 6652537271621569465, guid: 17e3e9e1d9433f04388024347cde4ff8, type: 3}
-  _wizardHelperList: []
+  _wizardHelperList:
+  - {fileID: 5418292866330215239, guid: b031ebc6935f9954c9897d88fad54f9f, type: 3}
   _warriorHelperList:
   - {fileID: 7830756482448840968, guid: 63fbc9287bca27443951b05e695f6866, type: 3}
+  _padsObjectImageList:
+  - {fileID: 1725725687}
+  - {fileID: 720757986}
+  - {fileID: 1968363656}
+  - {fileID: 1663325239}
   _enemySpawnPosition: {fileID: 86598979}
   _playerSpawnPosition: {fileID: 1798410336}
   _wizardHelperSpawnPosition: {fileID: 581409623}
