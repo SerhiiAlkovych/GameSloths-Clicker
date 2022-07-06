@@ -14,28 +14,31 @@ public class SceneManager : MonoBehaviour
     public GameObject _goldPrefab;
     public GameObject[] _enemyList;
     public GameObject[] _playerList;
-    public GameObject[] _wizzardHelperList;
+    public GameObject[] _wizardHelperList;
     public GameObject[] _warriorHelperList;
 
     [Header("Transform references")]
     public Transform _enemySpawnPosition;
     public Transform _playerSpawnPosition;
-    public Transform _wizzardHelperSpawnPosition;
+    public Transform _wizardHelperSpawnPosition;
     public Transform _warriorHelperSpawnPosition;
 
     [Header("Image references")]
     public Sprite[] _backgroundImageList;
     public Sprite[] _padsImageList;
 
-    void Start()
-    {
-        
-    }
+    public int index = 0;
 
     // Update is called once per frame
     void Update()
     {
         _playerGoldText.text = FindObjectOfType<AwardManager>().PlayerGold.ToString();
+        BackgroundImageUpdate();
+    }
+
+    private void BackgroundImageUpdate()
+    {
+        GameObject.Find ("Main_scene_panel").GetComponent<Image> ().sprite  =  _backgroundImageList[index];
     }
 
 

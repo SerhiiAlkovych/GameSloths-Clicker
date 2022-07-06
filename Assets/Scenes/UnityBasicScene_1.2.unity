@@ -1010,7 +1010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.061402805}
   m_AnchorMax: {x: 0.20732395, y: 0.5}
-  m_AnchoredPosition: {x: -0.04399872, y: -0.5}
+  m_AnchoredPosition: {x: -0.044006348, y: -0.5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592566633
@@ -1322,11 +1322,12 @@ MonoBehaviour:
   - {fileID: 7385271364059780256, guid: 9c332a34c77658a46bd7a1e06be4907b, type: 3}
   - {fileID: 5314578529826443851, guid: e2527d7a44224904a9814614b2c240a0, type: 3}
   - {fileID: 6652537271621569465, guid: 17e3e9e1d9433f04388024347cde4ff8, type: 3}
-  _wizzardHelperList: []
-  _warriorHelperList: []
+  _wizardHelperList: []
+  _warriorHelperList:
+  - {fileID: 7830756482448840968, guid: 63fbc9287bca27443951b05e695f6866, type: 3}
   _enemySpawnPosition: {fileID: 86598979}
   _playerSpawnPosition: {fileID: 1798410336}
-  _wizzardHelperSpawnPosition: {fileID: 581409623}
+  _wizardHelperSpawnPosition: {fileID: 0}
   _warriorHelperSpawnPosition: {fileID: 1385148314}
   _backgroundImageList:
   - {fileID: 21300000, guid: 3c050e3e1b23f4f4599f34c450855e1d, type: 3}
@@ -1346,6 +1347,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8814b5004a23bbc40b5cabb9ace84023, type: 3}
   - {fileID: 21300000, guid: 92d583cc467e1874c80ad6c0f0025617, type: 3}
   - {fileID: 21300000, guid: d0a8ca6f88136834c971491b88bfba37, type: 3}
+  index: 5
 --- !u!1 &1385148313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.24524349, y: 1}
-  m_AnchoredPosition: {x: -0.980011, y: 0}
+  m_AnchoredPosition: {x: -0.97998047, y: 0}
   m_SizeDelta: {x: -1.9599915, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916865860
