@@ -8,13 +8,24 @@ public class SceneManager : MonoBehaviour
 {
     [Header("Text references")]
     public Text _playerGoldText;
+    public Text _playerRubyText;
 
     [Header("GameObjects references")]
     public GameObject _goldPrefab;
     public GameObject[] _enemyList;
+    public GameObject[] _playerList;
+    public GameObject[] _wizzardHelperList;
+    public GameObject[] _warriorHelperList;
 
     [Header("Transform references")]
     public Transform _enemySpawnPosition;
+    public Transform _playerSpawnPosition;
+    public Transform _wizzardHelperSpawnPosition;
+    public Transform _warriorHelperSpawnPosition;
+
+    [Header("Image references")]
+    public Sprite[] _backgroundImageList;
+    public Sprite[] _padsImageList;
 
     void Start()
     {
