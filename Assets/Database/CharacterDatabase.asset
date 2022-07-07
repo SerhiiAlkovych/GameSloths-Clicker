@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342719d8c35b9b64482c9b9551f1a449, type: 3}
+  m_Name: CharacterDatabase
+  m_EditorClassIdentifier: 
+  _character:
+  - _characterName: Sampo
+    _characterGold: 20
+    _characterAttack: 5
+    _characterSprite: {fileID: 21300000, guid: 991e3ccecd16a974986ccefed76f4e97, type: 3}
+  - _characterName: Atticus
+    _characterGold: 20
+    _characterAttack: 4
+    _characterSprite: {fileID: 21300000, guid: 19ad871d702bf644eab767f655b772e7, type: 3}
+  - _characterName: Abdellatif
+    _characterGold: 25
+    _characterAttack: 6
+    _characterSprite: {fileID: 21300000, guid: 1133edb17e3edf94086f944e77fbfe3f, type: 3}
+  - _characterName: Clothildis
+    _characterGold: 15
+    _characterAttack: 7
+    _characterSprite: {fileID: 21300000, guid: 116f9c8211119c14885a112520a3f753, type: 3}
