@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1337577268930834421}
   - component: {fileID: 1337577268930834378}
   - component: {fileID: 1337577268930834377}
-  - component: {fileID: 1337577268930834376}
+  - component: {fileID: 3967278891828881831}
   - component: {fileID: 1337577268930834382}
   m_Layer: 0
   m_Name: Demon_Prefab
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8b0cbf4d75d82384a86ef8e2263765df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -156,7 +156,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1337577268930834376
+--- !u!114 &3967278891828881831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

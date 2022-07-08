@@ -18,9 +18,8 @@ public class DamageScene : MonoBehaviour
     }
 
     void OnMouseDown() {
-        Debug.Log("GetHit"); // Will stay only for tests;
         GetComponent<Animator>().SetBool("isHurt", true);
-        GetComponent<HealthScene>().GetHit(characterDamage);
+        FindObjectOfType<HealthScene>().GetHit(characterDamage);
     }
 
     void OnMouseUp() {

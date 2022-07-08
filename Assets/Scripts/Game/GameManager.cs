@@ -7,38 +7,39 @@ public class GameManager : MonoBehaviour
     SceneManager sceneManager;
 
     public CharacterDatabase _characterDB;
-    private int selectedOption = 0;
-    private int playerID = 0;
-    //private bool isAlive = false;
+    private int selectedOption;
+    private bool isAlive = true;
     void Start() {
         sceneManager = FindObjectOfType<SceneManager>();
 
-        if(!PlayerPrefs.HasKey("playerID")) 
+        if(!PlayerPrefs.HasKey("selectedOption")) 
         {
             selectedOption = 0;
-            playerID = 0;
-            SpawnPlayer(playerID);
+
+            SpawnPlayer(selectedOption);
+            SpawnEnemy(false);
         }
         else
         {
             Load();
         }
+        
         //UpdateCharacter(selectedOption);
-        //SpawnEnemy(true);
+        //SpawnEnemy(false);
     }
-    /*public void SpawnEnemy(bool isAlive)
+    public void SpawnEnemy(bool _isAlive)
     {
         int index = 0;
 
-        if(isAlive == true) {
+        if(_isAlive == false) {
         GameObject spawnEnemy = Instantiate(sceneManager._enemyList[index]) as GameObject;
         spawnEnemy.transform.position = sceneManager._enemySpawnPosition.position;
         }
-    }*/
+    }
 
-    public void SpawnPlayer(int _playerID)
+    public void SpawnPlayer(int _selectedOption)
     {
-        GameObject spawnEnemy = Instantiate(sceneManager._playerList[_playerID]) as GameObject;
+        GameObject spawnEnemy = Instantiate(sceneManager._playerList[_selectedOption]) as GameObject;
         spawnEnemy.transform.position = sceneManager._playerSpawnPosition.position;
     }
 
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
     private void Load()
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
-        playerID = PlayerPrefs.GetInt("playerID");
-        SpawnPlayer(playerID);
+        SpawnPlayer(selectedOption);
+        SpawnEnemy(false);
     }
 }

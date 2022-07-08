@@ -20,8 +20,9 @@ public class HealthScene : MonoBehaviour
     {
         int _health = monsterHealth - _damage;
 
-        if(_health <= 0) {
-            bool isAlive = true;
+        if(_health <= 0) 
+        {
+            bool isAlive = false;
             awardManager.getGold(enemyAward.EnemyGold,isAlive);
             Destroy(gameObject);
         }

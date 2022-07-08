@@ -14,7 +14,7 @@ public class CharacterManager : MonoBehaviour
     public Text _characterAttackText;
 
     private int selectedOption = 0;
-    private int playerID = 0;
+    private int playerID;
     // Start is called before the first frame update
     void Start()
     {

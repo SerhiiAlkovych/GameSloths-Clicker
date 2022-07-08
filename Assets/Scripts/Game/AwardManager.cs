@@ -14,9 +14,9 @@ public class AwardManager : MonoBehaviour
     public void getGold(int _gold, bool _isAlive)
     {
         playerGold += _gold;
-        GameObject _goldObject = Instantiate(sceneManager._goldPrefab).gameObject;
-        Destroy(_goldObject,2);
-        //gameManager.SpawnEnemy(_isAlive);
+        //GameObject _goldObject = Instantiate(sceneManager._goldPrefab).gameObject;
+        //Destroy(_goldObject,2);
+        gameManager.SpawnEnemy(_isAlive);
     }
 
     /// <summary>
