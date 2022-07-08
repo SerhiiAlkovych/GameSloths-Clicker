@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Unity_Main_Scene_ClickSound.unity
+    guid: 3c92e02d2f5dec845b4f957898811c02
+  - enabled: 0
+    path: Assets/Scenes/UnityBasicScene_1.3.unity
+    guid: 02283ba11ecf93949be5ebace31ad57b
+  - enabled: 1
+    path: Assets/Scenes/MainScene/MainSceneLoadGameFromDB.unity
+    guid: 883469b85b003d2499f4ba4601a5ef28
   m_configObjects: {}

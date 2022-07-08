@@ -9,4 +9,5 @@ public class Character
     public string _characterGold;
     public string _characterAttack;
     public Sprite _characterSprite;
+    public int _playerID;
 }
