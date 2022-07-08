@@ -14,11 +14,13 @@ public class CharacterManager : MonoBehaviour
     public Text _characterAttackText;
 
     private int selectedOption = 0;
+    private int playerID;
     // Start is called before the first frame update
     void Start()
     {
         if(!PlayerPrefs.HasKey("selectedOption")) {
             selectedOption = 0;
+            playerID = 0;
         }
         else
         {
@@ -35,6 +37,7 @@ public class CharacterManager : MonoBehaviour
         {
             selectedOption = 0;
         }
+
         UpdateCharacter(selectedOption);
         Save();
     }
@@ -63,9 +66,16 @@ public class CharacterManager : MonoBehaviour
     private void Load()
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
+        playerID = PlayerPrefs.GetInt("playerID");
     }
     private void Save()
     {
         PlayerPrefs.SetInt("selectedOption", selectedOption);
+        PlayerPrefs.SetInt("playerID", playerID);
+    }
+
+    public void LoadScene(int _sceneID)
+    {
+       UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneID);
     }
 }
