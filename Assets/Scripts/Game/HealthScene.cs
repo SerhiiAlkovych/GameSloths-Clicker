@@ -10,10 +10,19 @@ public class HealthScene : MonoBehaviour
     EnemyAward enemyAward;
     AwardManager awardManager;
 
+    SceneManager sceneManager;
+
     void Start() {
         enemyAward = GetComponent<EnemyAward>();
         awardManager = FindObjectOfType<AwardManager>();
+        sceneManager = FindObjectOfType<SceneManager>();
     }
+
+    void Update() {
+        sceneManager._monsterHealth.value = monsterHealth;
+        sceneManager._monsterHealth.maxValue = maxMonsterHealth;
+    }
+
     // Start is called before the first frame update
 
     public void GetHit(int _damage)
@@ -22,8 +31,7 @@ public class HealthScene : MonoBehaviour
 
         if(_health <= 0) 
         {
-            bool isAlive = false;
-            awardManager.getGold(enemyAward.EnemyGold,isAlive);
+            awardManager.getGold(100,false); // enemyAward.EnemyGold
             Destroy(gameObject);
         }
         monsterHealth = _health;

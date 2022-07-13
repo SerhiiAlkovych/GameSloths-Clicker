@@ -7,15 +7,6 @@ public class DamageScene : MonoBehaviour
 {
     private int characterDamage = 10;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     void OnMouseDown() {
         GetComponent<Animator>().SetBool("isHurt", true);

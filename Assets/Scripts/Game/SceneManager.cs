@@ -28,6 +28,9 @@ public class SceneManager : MonoBehaviour
     public Sprite[] _backgroundImageList;
     public Sprite[] _padsImageList;
 
+    [Header("Slider References")]
+    public Slider _monsterHealth;
+
     public int index = 0;
 
     // Update is called once per frame
