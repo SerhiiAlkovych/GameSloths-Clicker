@@ -21,6 +21,7 @@ public class HealthScene : MonoBehaviour
     void Update() {
         sceneManager._monsterHealth.value = monsterHealth;
         sceneManager._monsterHealth.maxValue = maxMonsterHealth;
+        sceneManager._playerGoldText.text = awardManager.PlayerGold.ToString();
     }
 
     // Start is called before the first frame update
@@ -31,7 +32,7 @@ public class HealthScene : MonoBehaviour
 
         if(_health <= 0) 
         {
-            awardManager.getGold(100,false); // enemyAward.EnemyGold
+            awardManager.getGold(100); // enemyAward.EnemyGold
             Destroy(gameObject);
         }
         monsterHealth = _health;

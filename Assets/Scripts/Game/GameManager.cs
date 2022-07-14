@@ -25,14 +25,14 @@ public class GameManager : MonoBehaviour
         }
         
         //UpdateCharacter(selectedOption);
-        SpawnEnemy(true);
+        //SpawnEnemy(true);
     }
-    public void SpawnEnemy(bool _isAlive)
+    public void SpawnEnemy()
     {
-        //int index = 0;
+        int index = Random.Range(0,4);
 
-        if(_isAlive == false) {
-        GameObject spawnEnemy = Instantiate(sceneManager._enemyList[0]) as GameObject;
+        if(!gameObject.CompareTag("Enemy")) {
+        GameObject spawnEnemy = Instantiate(sceneManager._enemyList[index]) as GameObject;
         spawnEnemy.transform.position = sceneManager._enemySpawnPosition.position;
         }
     }
@@ -52,6 +52,6 @@ public class GameManager : MonoBehaviour
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
         SpawnPlayer(selectedOption);
-        SpawnEnemy(false);
+        SpawnEnemy();
     }
 }
