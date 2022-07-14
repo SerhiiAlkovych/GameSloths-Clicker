@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/UnityBasicScene_1.3.unity
     guid: 02283ba11ecf93949be5ebace31ad57b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene/MainSceneLoadGameFromDB.unity
     guid: 883469b85b003d2499f4ba4601a5ef28
+  - enabled: 1
+    path: Assets/Scenes/MainScene/TestWithFix.unity
+    guid: d07476b3a815f044f86adb5b6c887952
   m_configObjects: {}

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1337577268930834377}
   - component: {fileID: 3967278891828881831}
   - component: {fileID: 1337577268930834382}
+  - component: {fileID: 7668357191039870895}
   m_Layer: 0
   m_Name: Demon_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337577268930834422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.46, y: -0.12, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3, y: -0.1}
+  m_Offset: {x: -0.36491787, y: -0.14567548}
   m_SpriteTilingProperty:
     border: {x: 0.62, y: 0.71, z: 1.16, w: 0.96999997}
     pivot: {x: 0.5, y: 0.5}
@@ -113,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 1}
+  m_Size: {x: 0.525947, y: 0.811208}
   m_EdgeRadius: 0
 --- !u!50 &1337577268930834378
 Rigidbody2D:
@@ -178,5 +179,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a07216446bcd67846b9c9077d86c11a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7668357191039870895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337577268930834422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2f60fe645d3f3488cd966ed099000d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
